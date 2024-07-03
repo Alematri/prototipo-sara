@@ -1,0 +1,455 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  background-color: #fff;
+  display: flex;
+  max-width: 480px;
+  width: 100%;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  gap: 10px;
+  font-size: 30px;
+  color: #000;
+  font-weight: 400;
+  line-height: 22px;
+  width: 480px;
+  background-color: white;
+}
+
+.btn{
+  border-radius: 0;
+}
+
+
+
+.buy-button{
+  height: 50px;
+}
+
+.logo {
+  aspect-ratio: 1.04;
+  object-fit: auto;
+  object-position: center;
+  width: 53px;
+}
+
+.brand-name {
+  font-family: 'DM Serif Text', sans-serif;
+}
+
+.cart-icon {
+  aspect-ratio: 1.1;
+  object-fit: auto;
+  object-position: center;
+  width: 47px;
+}
+
+.banner {
+  text-decoration-line: underline;
+  position: relative;
+  aspect-ratio: 1.61;
+  color: #000;
+  font: 700 22px/22px 'Inria Serif', sans-serif;
+  margin-top: 67px;
+  display: flex;
+  align-items: center;
+}
+
+.banner-bg {
+  inset: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.product-title {
+  color: #000;
+  margin-top: 10px;
+  font: 700 22px 'Inria Serif', sans-serif;
+}
+
+.product-image {
+  aspect-ratio: 0.91;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-price {
+  color: #000;
+  font: 600 25px 'DM Serif Text', sans-serif;
+  font-size: xx-large;
+}
+
+.color-option {
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid black;
+  position: relative;
+}
+
+.color-blue { background-color: #708090; }
+.color-blue:hover{
+  background-color: #596572;
+}
+.color-gray { background-color: #a0a0a0; }
+.color-gray:hover{
+  background-color: #d1d1d1;
+}
+.color-white { background-color: #fff; }
+.color-white:hover{
+  background-color: #dfdfdf;
+}
+.color-black { background-color: #000; }
+.color-black:hover{
+  background-color: #000000c7;
+}
+
+.color-option.selected::after {
+  content: 'X';
+  color: rgb(255, 0, 0);
+  font-size: 72px;
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buy-button {
+  background-color: #000;
+  color: #fff;
+  font: 700 18px 'DM Serif Text', sans-serif;
+  width: 98.1%;
+}
+
+.product-description {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: 'DM Serif Text', sans-serif;
+}
+
+.divider {
+  height: 10px;
+  color: #B7B7B7;
+}
+
+.support-image, .newsletter-input, .newsletter-button {
+  max-width: 100%;
+  border-radius: 0;
+}
+
+.contact-info, .email-info {
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon, .email-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-text {
+  font-size: 16px;
+}
+
+.newsletter-title, .help-title {
+  font-size: 22px;
+}
+
+.newsletter-description, .help-description {
+  font-size: 16px;
+}
+
+.newsletter-section {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.newsletter-input {
+  padding: 8px;
+}
+
+.newsletter-button {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.footer-info {
+  font-size: 18px;
+}
+
+.footer-info a {
+  display: block;
+  color: #000;
+  margin-top: 5px;
+}
+
+.size-selector {
+  display: flex;
+  max-width: 396px;
+  flex-direction: column;
+  font-size: 37px;
+  color: #000;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.size-title {
+  align-self: center;
+}
+
+.size-button {
+  font-family: 'Inria Serif', sans-serif;
+  border: 1px solid #000;
+  background-color: #f3f3f3;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+.size-button:hover,
+.size-button:active {
+  color: white;
+  background-color: #000;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 500px; /* Adjust the height as needed */
+}
+
+.carousel-control-prev, .carousel-control-next {
+  filter: invert(100%);
+}
+
+.carousel-indicators {
+  bottom: -40px; /* Positioning the indicators at the bottom */
+}
+
+.carousel-indicators button {
+  background-color: #000; /* Default color for the indicators */
+}
+
+.carousel-indicators .active {
+  background-color: #fff; /* Active color for the indicator */
+}
+
+.menu-icon {
+  aspect-ratio: 1.1;
+  object-fit: auto;
+  object-position: center;
+  width: 47px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.nav-menu {
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+  font-size: 13px;
+  color: #000;
+  font-weight: 300;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 169%;
+  padding: 0 61px;
+}
+
+.nav-item {
+  font-family: 'Inria Serif', sans-serif;
+  padding-bottom: 30px;
+}
+
+.section {
+  justify-content: center;
+  background-color: #c7c7c7;
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  padding: 24px 20px;
+}
+
+.section-title {
+  color: #000;
+  width: 100%;
+  font: 700 21px 'Inria Serif', sans-serif;
+}
+
+.download-btn, .confirm-btn {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  flex-direction: column;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  white-space: nowrap;
+  justify-content: center;
+  padding: 0 49px;
+  background-color: #000;
+  border: 1px solid #000;
+  height: 40px;
+}
+
+.download-btn:hover, .confirm-btn:hover {
+  background-color: #373b3e;
+  border-color: #373b3e;
+}
+
+.download-btn,
+
+.btn-text {
+  font-family: 'Inria Serif', sans-serif;
+  justify-content: center;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-self: center;
+  position: relative;
+  aspect-ratio: 1.75;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 49px 60px;
+}
+
+.video-bg {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.play-icon {
+  aspect-ratio: 1.2;
+  object-fit: auto;
+  object-position: center;
+  width: 114px;
+  max-width: 100%;
+}
+
+.selection-section {
+  justify-content: center;
+  background-color: #c7c7c7;
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  flex-direction: column;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  padding: 24px 20px;
+}
+
+.option-btn {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+  white-space: nowrap;
+  justify-content: center;
+  height: 40px;
+  border: 1px solid #000;
+  background-color: #c7c7c7;
+}
+
+.option-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.option-btn.selected {
+  background-color: #000000;
+  color: white;
+  border-color: #000000;
+}
+
+.option-text {
+  font-family: 'Inria Serif', sans-serif;
+
+  justify-content: center;
+}
+
+.confirm-section {
+  justify-content: center;
+  background-color: #c7c7c7;
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  flex-direction: column;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+
+.confirm-text {
+  font-family: 'Inria Serif', sans-serif;
+  justify-content: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.modal-content {
+  padding: 2rem;
+}
+.form-control {
+  font-style: italic;
+  background-color: #f8f9fa; /* Grigio chiaro per l'input */
+  border-color: #ced4da; /* Colore del bordo dell'input */
+}
+.modal-body {
+  text-align: center; /* Centra il testo */
+}
+.modal-body h2 {
+  margin-bottom: 1rem;
+}
+.modal-body h1 {
+  margin: 2rem 0; /* Margine per separare il testo dai bottoni */
+}
+.btn-google {
+  background-color: #4285F4; /* Colore blu di Google */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-google i {
+  margin-right: 0.5rem; /* Spazio tra l'icona e il testo */
+}

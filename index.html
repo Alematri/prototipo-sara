@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titolo della tua pagina</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header d-flex align-items-center justify-content-between gap-2 p-2 fixed-top">
+            <a href="index.html">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5a2dc83ea63bbd777a5aa67f1d7c73d39dc29831e5a84140c01a91f98f5be02e?apiKey=d876ce4711f8481b8ce6f60556d5a2cb&" alt="Cozy Shoes Logo" class="logo">
+            </a>
+            <h2 class="brand-name">COZY SHOES</h2>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/76aef197277f7141c4a6c23640468a7340ac392ae4acdec5b1cfee21e7025fc2?apiKey=d876ce4711f8481b8ce6f60556d5a2cb&" alt="Shopping Cart" class="cart-icon">
+        </header>
+        
+        <section class="banner overflow-hidden text-center p-4">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/59b701c184cd870e6f7280438b1fee7416d08aa85148bba5488f27d51cb22c42?apiKey=d876ce4711f8481b8ce6f60556d5a2cb&" alt="Free Return Banner" class="banner-bg position-absolute w-100 h-100">
+            <div class="banner-content">
+                <span>RESO GRATUITO ENTRO 15 GIORNI</span>
+                <br>
+                <span>politiche di reso</span>
+            </div>
+        </section>
+    
+        <section class="mt-3 pe-5">
+            <h2 class="product-title ps-2">Modello 1</h2>
+            <div id="carouselExampleControls" class="carousel slide">
+              <div class="carousel-inner">
+                  <!-- Blue Shoe Images -->
+                  <div class="carousel-item active">
+                      <img src="https://via.placeholder.com/1000x1000/708090/ffffff?text=Blue+Shoe" alt="Blue Shoe 1" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="https://via.placeholder.com/1000x1000/708090/ffffff?text=Blue+Shoe2" alt="Blue Shoe 2" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="https://via.placeholder.com/1000x1000/708090/ffffff?text=Blue+Shoe3" alt="Blue Shoe 3" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="https://via.placeholder.com/1000x1000/708090/ffffff?text=Blue+Shoe4" alt="Blue Shoe 4" class="d-block w-100">
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+            <p class="product-price text-center">120 €</p>
+            <div class="color-options d-flex justify-content-between mt-3 gap-2 ms-2">
+                <div class="color-option color-blue selected" role="button" tabindex="0" aria-label="Blue color option" data-color="blue"></div>
+                <div class="color-option color-gray" role="button" tabindex="0" aria-label="Gray color option" data-color="gray"></div>
+                <div class="color-option color-white" role="button" tabindex="0" aria-label="White color option" data-color="white"></div>
+                <div class="color-option color-black" role="button" tabindex="0" aria-label="Black color option" data-color="black"></div>
+            </div>
+            <button class="buy-button btn btn-dark mt-3 ms-2">ACQUISTA</button>
+            <p class="product-description mt-3 ps-2">Il modello 1 è un modello bello se ti piace usare i piedi per camminare e andare nei posti, consigliato per le signore</p>
+        </section>
+        
+    
+        <!-- Add other sections similarly... -->
+    
+        <div class="divider bg-secondary my-3"></div>
+    
+        <section class="support-section text-center bg-light p-3 mt-3">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5b4369e3daf6cb3ce1faf25b54d0681bcfae1466e3031cfea99ebe58c67fb9d5?apiKey=d876ce4711f8481b8ce6f60556d5a2cb&" alt="Customer Support" class="support-image w-100">
+        </section>
+    
+        <section class="help-section bg-light p-3 mt-3">
+            <h2 class="help-title text-center">Hai bisogno di aiuto?</h2>
+            <p class="help-description mt-3">Contatta i nostri operatori via telefono o email, ti risponderemo il prima possibile.</p>
+            <div class="contact-info gap-2 mt-3">
+                <p class="contact-text"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/78a0d3c69e2950cfc3ff4f8510d463d316c5c64f655de1255b1f278d0135d007?apiKey=d876ce4711f8481b8ce6f60556d5a2cb&" alt="Phone Icon" class="contact-icon"> +39 321 9876189</p>
+            </div>
+            <div class="email-info gap-2 mt-2">
+                <p class="contact-text"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0802fa78600598df175d5e2575b3142cedec12fe02c5ff1dbbafc9f54935f889?apiKey=d876ce4711f8481b8ce6f60556d5a2cb&" alt="Email Icon" class="email-icon me-2">assistenza@info.it</p>
+            </div>
+        </section>
+    
+        <section class="newsletter-section bg-light p-3 mt-3">
+            <h2 class="newsletter-title text-center">Iscriviti alla Newsletter</h2>
+            <p class="newsletter-description mt-3">Riceverai aggiornamenti settimanali sui nostri prodotti e le nostre offerte</p>
+            <form>
+                <label for="email-input" class="visually-hidden">Indirizzo email</label>
+                <input type="email" id="email-input" placeholder="example@email.com" class="newsletter-input form-control mt-2" required>
+                <button type="submit" class="newsletter-button btn btn-dark mt-2">ISCRIVITI</button>
+            </form>
+            <footer class="footer-info mt-4">
+              <h2 class="mb-3">Contatti:</h2>
+              <p>+39 389 0411278</p>
+              <p>info@cozyshoes.it</p>
+              <p><a href="#faq">FAQ</a></p>
+              <a href="#privacy">Informativa sulla Privacy</a>
+          </footer>
+        </section>
+    </main>
+
+    <script src="index-script.js"></script>
+</body>
+</html>
