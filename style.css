@@ -7,14 +7,31 @@ a {
   box-shadow: #373b3e;
 }
 
+body {
+  background-color: black;
+}
+
 .container {
   background-color: #fff;
   display: flex;
   max-width: 480px;
   width: 100%;
   flex-direction: column;
-  margin: 0;
+  margin: auto;
   padding: 0;
+}
+
+.modalscontainer{
+  max-width: 480px;
+}
+
+.modal-dialog{
+  margin: auto;
+  max-width: 450px;
+}
+
+.modal-content{
+  max-width: 480px;
 }
 
 .header {
@@ -25,6 +42,7 @@ a {
   line-height: 22px;
   width: 480px;
   background-color: white;
+  margin: auto;
 }
 
 .btn{
@@ -70,6 +88,10 @@ a {
   inset: 0;
   height: 100%;
   width: 100%;
+}
+
+.banner-content, span{
+  margin: 0 auto;
 }
 
 
@@ -126,11 +148,28 @@ a {
   transform: translate(-50%, -50%);
 }
 
+.dots{
+  position: relative;
+  bottom: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: inherit;
+}
+
+.fa-circle{
+  width: 50px;
+}
+
 .buy-button {
   background-color: #000;
   color: #fff;
   font: 700 18px 'DM Serif Text', sans-serif;
-  width: 98.1%;
+  width: 95%;
+  margin: auto;
 }
 
 .product-description {

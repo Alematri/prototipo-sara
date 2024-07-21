@@ -63,6 +63,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
         carouselInner.appendChild(itemDiv);
       });
+
+      updateDots();
+      updateCarouselControls(color);
+    }
+
+    function updateDots() {
+      const dots = document.querySelectorAll('.dots i');
+      const activeIndex = Array.from(carouselInner.children).findIndex(item => item.classList.contains('active'));
+
+      dots.forEach((dot, index) => {
+        dot.classList.remove('fa-solid');
+        dot.classList.add('fa-regular');
+        if (index === activeIndex) {
+          dot.classList.remove('fa-regular');
+          dot.classList.add('fa-solid');
+        }
+      });
+    }
+
+    function updateCarouselControls(color) {
+      const prevIcon = document.querySelector('.carousel-control-prev-icon');
+      const nextIcon = document.querySelector('.carousel-control-next-icon');
+      if (color === 'black') {
+        prevIcon.style.backgroundColor = 'white';
+        nextIcon.style.backgroundColor = 'white';
+      } else {
+        prevIcon.style.backgroundColor = '';
+        nextIcon.style.backgroundColor = '';
+      }
     }
 
     colorOptions.forEach(option => {
@@ -120,6 +149,9 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.size-title').textContent = 'Taglia: 35';
     }
 
+    // Aggiorna i punti del carosello quando cambia l'elemento attivo
+    document.querySelector('#carouselExampleControls').addEventListener('slid.bs.carousel', updateDots);
+
     buyButton.addEventListener('click', () => {
       console.log('Pulsante di acquisto cliccato');
       window.location.href = 'checkout-page.html';
@@ -138,3 +170,4 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error('Uno o entrambi i modali non sono stati trovati.');
   }
 });
+
