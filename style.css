@@ -3,6 +3,10 @@ a {
   color: inherit;
 }
 
+.passwordInput{
+  box-shadow: #373b3e;
+}
+
 .container {
   background-color: #fff;
   display: flex;
@@ -306,7 +310,7 @@ a {
   padding: 0 49px;
   background-color: #000;
   border: 1px solid #000;
-  height: 40px;
+  height: 70px;
 }
 
 .download-btn:hover, .confirm-btn:hover {
@@ -395,7 +399,6 @@ a {
 
 .confirm-section {
   justify-content: center;
-  background-color: #c7c7c7;
   display: flex;
   margin-top: 10px;
   width: 100%;
@@ -410,8 +413,11 @@ a {
 
 
 .confirm-text {
-  font-family: 'Inria Serif', sans-serif;
   justify-content: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: 'DM Serif Text', sans-serif;
 }
 
 .visually-hidden {
@@ -444,12 +450,31 @@ a {
   margin: 2rem 0; /* Margine per separare il testo dai bottoni */
 }
 .btn-google {
-  background-color: #4285F4; /* Colore blu di Google */
+  background-color: rgb(33, 37, 41); /* Colore blu di Google */
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.btn-google:hover{
+  background-color: #373b3e;
+  color: white;
+}
 .btn-google i {
   margin-right: 0.5rem; /* Spazio tra l'icona e il testo */
+}
+
+.downloadApp{
+  font-size: xx-large;
+  margin-top: 66px;
+}
+
+.backButton {
+  width: 50px;  /* Larghezza e altezza uguali per ottenere una forma circolare */
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* Centra l'icona */
+  padding: 0;  /* Rimuove padding aggiuntivo */
 }
